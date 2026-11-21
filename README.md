@@ -8,4 +8,4 @@ A chess engine in at most 4,096 bytes of Python, entered in the [make.fun tiny-c
 
 It plays 8 games through the env at `MAKEFUN_ENV_URL` (`POST /game`, `POST /move`), one move at a time, with a bounded PVS+TT search and quiescence — no clock, no unseeded randomness, so every replay is byte-for-byte identical.
 
-Repack via `makefun compress engine_src.py --out main.py`.
+Repack via `makefun compress engine.py --out main.py`.
